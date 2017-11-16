@@ -9,12 +9,12 @@ while true; do
     fi
 done
 
-mkdir /opt/gradle
-unzip -d /opt/gradle $ARCHIVE
+mkdir -p /opt/gradle
+yes | unzip -d /opt/gradle $ARCHIVE
 
 while true; do
     read -p "Please type a name of the unarchived directory: " FOLDER
-    if [ -d $FOLDER ]; then
+    if [ -d /opt/gradle/$FOLDER ]; then
         break;
     else
         echo "Directory doesn't exist."
