@@ -23,3 +23,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 apt-get update
 yes | apt-get install docker-ce
+
+# Use docker without sudo
+groupadd docker
+gpasswd -a $USER docker
+newgrp docker
