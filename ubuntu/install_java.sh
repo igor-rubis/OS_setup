@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
- # Copyright 2016 Igor Rubis
- # Licensed under the Apache License, Version 2.0
-
-# chmod +x /path/to/yourscript.sh
-# /path/to/yourscript.sh || ./yourscript.sh
-
 ARCHIVE="jdk-9.0.1_linux-x64_bin.tar.gz"
 FOLDER="jdk-9.0.1"
 
