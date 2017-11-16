@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-ARCHIVE="jdk-9.0.1_linux-x64_bin.tar.gz"
-FOLDER="jdk-9.0.1"
-
-# sudo mkdir -p /usr/local/java
-# sudo wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u102-b14/$ARCHIVE
+while true; do
+    read -p "Please type a name of the archive: " ARCHIVE
+    if [ -s $ARCHIVE ]; then
+        break;
+    else
+        echo "File doesn't exist."
+    fi
+done
 
 mkdir -p /usr/local/java/
 mv $ARCHIVE /usr/local/java/$ARCHIVE
@@ -12,6 +15,15 @@ cd /usr/local/java
 chmod a+x $ARCHIVE
 tar xvzf $ARCHIVE
 rm -rf $ARCHIVE
+
+while true; do
+    read -p "Please type a name of the unarchived directory: " folder
+    if [ -d $folder ]; then
+        FOLDER=$folder; break;
+    else
+        echo "Directory doesn't exist."
+    fi
+done
 
 # add to /etc/profile
 echo "" >> /etc/profile
