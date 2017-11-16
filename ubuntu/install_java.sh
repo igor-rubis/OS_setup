@@ -35,3 +35,5 @@ update-alternatives --set javac /usr/local/java/$FOLDER/bin/javac
 update-alternatives --set javaws /usr/local/java/$FOLDER/bin/javaws
 
 . /etc/profile
+
+java -version
