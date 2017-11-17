@@ -1,0 +1,7 @@
+ # Copyright 2016 Igor Rubis
+ # Licensed under the Apache License, Version 2.0
+
+JAVA_HOME=/usr/local/java/jdk1.8.0_73
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
+export PATH

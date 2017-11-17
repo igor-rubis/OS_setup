@@ -1,0 +1,6 @@
+.idea
+.vagrant
+*.tar.gz
+.DS_Store
+build/
+*.jar
