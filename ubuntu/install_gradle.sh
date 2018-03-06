@@ -11,6 +11,7 @@ done
 
 mkdir -p /opt/gradle
 yes | unzip -d /opt/gradle $ARCHIVE
+rm $ARCHIVE
 
 while true; do
     read -p "Please type a name of the unarchived directory: " FOLDER
