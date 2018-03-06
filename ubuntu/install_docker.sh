@@ -22,3 +22,7 @@ yes | apt-get install docker-ce
 groupadd docker
 gpasswd -a $USER docker
 newgrp docker
+
+rm install_docker.sh
+
+docker -v

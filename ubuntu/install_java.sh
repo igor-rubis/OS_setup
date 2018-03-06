@@ -40,6 +40,8 @@ update-alternatives --set java /usr/local/java/$FOLDER/bin/java
 update-alternatives --set javac /usr/local/java/$FOLDER/bin/javac
 update-alternatives --set javaws /usr/local/java/$FOLDER/bin/javaws
 
-. /etc/profile
+source /etc/profile
+
+rm install_java.sh
 
 java -version

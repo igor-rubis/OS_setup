@@ -26,4 +26,6 @@ ln -s /usr/lib/$FOLDER /usr/lib/idea
 
 ln -s /usr/lib/idea/bin/idea.sh /usr/bin/idea
 
+rm install_intellij_idea.sh
+
 idea
