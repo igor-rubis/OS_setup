@@ -10,6 +10,7 @@ while true; do
 done
 
 tar xvf $ARCHIVE
+rm $ARCHIVE
 
 while true; do
     read -p "Please type a name of the unarchived directory: " FOLDER
