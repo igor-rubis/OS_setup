@@ -1,5 +1,7 @@
 ```bash
-chmod +x /path/to/yourscript.sh
+cd /path/to/this/folder/
+
+chmod +x *
 
 sudo su
 
