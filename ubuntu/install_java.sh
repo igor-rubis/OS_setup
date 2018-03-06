@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+SCRIPT_FOLDER= 'pwd'
+
 while true; do
     read -p "Please type a name of the archive: " ARCHIVE
     if [ -s $ARCHIVE ]; then
@@ -42,6 +44,6 @@ update-alternatives --set javaws /usr/local/java/$FOLDER/bin/javaws
 
 source /etc/profile
 
-rm install_java.sh
+rm $SCRIPT_FOLDER/install_java.sh
 
 java -version
