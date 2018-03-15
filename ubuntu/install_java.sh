@@ -29,10 +29,8 @@ done
 
 # add to /etc/profile
 echo "" >> /etc/profile
-echo "JAVA_HOME=/usr/local/java/$FOLDER" >> /etc/profile
-echo "PATH=\$PATH:\$HOME/bin:\$JAVA_HOME/bin" >> /etc/profile
-echo "export JAVA_HOME" >> /etc/profile
-echo "export PATH" >> /etc/profile
+echo "export JAVA_HOME=/usr/local/java/$FOLDER" >> /etc/profile
+echo "export PATH=\$PATH:\$HOME/bin:\$JAVA_HOME/bin" >> /etc/profile
 
 update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/$FOLDER/bin/java" 1
 update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/$FOLDER/bin/javac" 1
