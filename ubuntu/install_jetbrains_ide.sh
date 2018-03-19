@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+read -p "Please type a name of the IDE. May be 'idea' || 'goland' || etc." IDE
+
 while true; do
     read -p "Please type a name of the archive: " ARCHIVE
     if [ -s $ARCHIVE ]; then
@@ -22,10 +24,10 @@ while true; do
 done
 
 mv $FOLDER /usr/lib
-ln -s /usr/lib/$FOLDER /usr/lib/idea
+ln -s /usr/lib/$FOLDER /usr/lib/$IDE
 
-ln -s /usr/lib/idea/bin/idea.sh /usr/bin/idea
+ln -s /usr/lib/$IDE/bin/$IDE.sh /usr/bin/$IDE
 
-rm install_intellij_idea.sh
+rm install_jetbrains_ide.sh
 
-idea
+$IDE
