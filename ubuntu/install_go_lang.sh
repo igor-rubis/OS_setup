@@ -15,6 +15,8 @@ done
 yes | tar -C /usr/local -xzf $ARCHIVE
 rm $ARCHIVE
 
+mkdir ~/go
+
 echo "" >> /etc/profile
 echo "export PATH=\$PATH:/usr/local/go/bin" >> /etc/profile
 echo "export GOPATH=\$HOME/go" >> /etc/profile
