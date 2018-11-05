@@ -23,8 +23,10 @@ groupadd docker
 gpasswd -a $USER docker
 newgrp docker
 
-rm install_docker.sh
-
 docker -v
 
 usermod -a -G docker $USER
+
+rm install_docker.sh
+
+reboot
