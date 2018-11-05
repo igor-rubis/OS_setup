@@ -26,3 +26,5 @@ newgrp docker
 rm install_docker.sh
 
 docker -v
+
+usermod -a -G docker $USER
