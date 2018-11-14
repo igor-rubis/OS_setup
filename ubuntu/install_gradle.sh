@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Download gradle archive from https://gradle.org/releases/ into this folder:"
+echo "Download an archive with gradle binary from https://gradle.org/releases/ into this folder:"
 pwd
 
 while true; do
